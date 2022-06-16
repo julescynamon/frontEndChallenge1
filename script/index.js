@@ -6,15 +6,23 @@ window.onload = function () {
 	button.onclick = function (e) {
 		if (nav.style.display == "block") {
 			nav.style.display = "none";
+			document.getElementById("myImg").src =
+				"../images/icon-arrow-down.svg";
 		} else {
 			nav.style.display = "block";
+			document.getElementById("myImg").src =
+				"../images/icon-arrow-up.svg";
 		}
 	};
 	button2.onclick = function (e) {
 		if (nav2.style.display == "block") {
 			nav2.style.display = "none";
+			document.getElementById("myImg2").src =
+				"../images/icon-arrow-down.svg";
 		} else {
 			nav2.style.display = "block";
+			document.getElementById("myImg2").src =
+				"../images/icon-arrow-up.svg";
 		}
 	};
 };
