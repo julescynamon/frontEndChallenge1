@@ -1,0 +1,8 @@
+.parent__div2 {
+    &--h1 {
+        @include font;
+        width: 80%;
+        height: 70%;
+        font-size: 100px;
+    }
+}

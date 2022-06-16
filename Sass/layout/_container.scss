@@ -1,0 +1,36 @@
+.parent {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 12px;
+
+    &__div1 {
+        grid-area: 1 / 1 / 2 / 6;
+        height: 100px;
+        width: 100%;
+        @include d-flex;
+        @include m-10;
+        @include p-20;
+    }
+
+    &__div3 {
+        background-color: blue;
+        grid-area: 2 / 4 / 6 / 6;
+    }
+
+    &__div2 {
+        background-color: green;
+        grid-area: 2 / 1 / 5 / 4;
+        @include d-flex;
+        @include flex-column;
+        padding: 60px;
+    }
+
+    &__div4 {
+        background-color: violet;
+        grid-area: 5 / 1 / 6 / 4;
+    }
+}
