@@ -26,7 +26,7 @@
     &__div3 {
         background-image: url('../../images/image-hero-desktop.png');
         background-size: cover;
-        height: 90%;
+        height: 100%;
         background-position: center;
         grid-area: 2 / 4 / 6 / 6;
 
@@ -38,4 +38,39 @@
         @include flex-row;
         padding: 60px;
     }
+}
+
+// media query
+
+@media (max-width: 990px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        &__div1 {
+            grid-area: 1 / 1 / 2 / 5;
+            height: 90px;
+        }
+
+        &__div2 {
+            grid-area: 5 / 1 / 7 / 3;
+
+        }
+
+        &__div3 {
+            grid-area: 2 / 1 / 5 / 3;
+            background-image: url('../../images/image-hero-mobile.png');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+
+        &__div4 {
+            grid-area: 7 / 1 / 8 / 3;
+        }
+    }
+
 }

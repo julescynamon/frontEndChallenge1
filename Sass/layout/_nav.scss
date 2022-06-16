@@ -2,7 +2,8 @@
     &__div1 {
         &--nav {
             @include d-flex;
-            width: 80%;
+            width: 100%;
+            justify-content: space-between;
         }
 
         &--listAnim {
@@ -12,6 +13,29 @@
             >li {
                 margin-right: 60px;
             }
+        }
+
+        &--login{
+            display: flex;
+            justify-content: flex-end;
+            .btn {
+            margin-left: 30px;
+            font-size: 15px;
+            margin-bottom: 40px;
+            background: transparent;
+            @include align-items-center;
+            @include font;
+
+            &--btnPrimary {
+                border-radius: 18px;
+                border: 1px solid black;
+                display: inline-block;
+                cursor: pointer;
+                padding: 13px 48px;
+                text-decoration: none;
+                align-self: center;
+            }
+        }
         }
 
     }
@@ -24,7 +48,7 @@
     transform: translateY(-20px);
     width: 150px;
     height: 160px;
-    
+
 
 
     >li {
@@ -51,21 +75,39 @@
     }
 }
 
-.btn {
-    margin-left: 30px;
-    font-size: 15px;
-    margin-bottom: 40px;
-    background: transparent;
-    @include align-items-center;
-    @include font;
-
-    &--btnPrimary {
-        border-radius: 18px;
-        border: 1px solid black;
-        display: inline-block;
-        cursor: pointer;
-        padding: 13px 48px;
-        text-decoration: none;
-        align-self: center;
+.menuHamburger {
+    border: red;
+    &--bar1{
+        background: red;
+        width: 30px;
+        height: 3px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+    &--bar2{
+        background: red;
+        width: 30px;
+        height: 3px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+    &--bar3{
+        background: red;
+        width: 30px;
+        height: 3px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
     }
 }
+
+
+
+// media query
+
+@media (max-width: 990px) {}

@@ -59,7 +59,7 @@ a {
 .parent__div3 {
   background-image: url("../../images/image-hero-desktop.png");
   background-size: cover;
-  height: 90%;
+  height: 100%;
   background-position: center;
   grid-area: 2/4/6/6;
 }
@@ -70,9 +70,36 @@ a {
   padding: 60px;
 }
 
+@media (max-width: 990px) {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .parent__div1 {
+    grid-area: 1/1/2/5;
+    height: 90px;
+  }
+  .parent__div2 {
+    grid-area: 5/1/7/3;
+  }
+  .parent__div3 {
+    grid-area: 2/1/5/3;
+    background-image: url("../../images/image-hero-mobile.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  .parent__div4 {
+    grid-area: 7/1/8/3;
+  }
+}
 .parent__div1--nav {
   display: flex;
-  width: 80%;
+  width: 100%;
+  justify-content: space-between;
 }
 .parent__div1--listAnim {
   margin-left: 60px;
@@ -80,6 +107,27 @@ a {
 }
 .parent__div1--listAnim > li {
   margin-right: 60px;
+}
+.parent__div1--login {
+  display: flex;
+  justify-content: flex-end;
+}
+.parent__div1--login .btn {
+  margin-left: 30px;
+  font-size: 15px;
+  margin-bottom: 40px;
+  background: transparent;
+  align-items: center;
+  font-family: "Epilogue", sans-serif;
+}
+.parent__div1--login .btn--btnPrimary {
+  border-radius: 18px;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  padding: 13px 48px;
+  text-decoration: none;
+  align-self: center;
 }
 
 .cards {
@@ -122,22 +170,35 @@ a {
   font-size: 14px;
 }
 
-.btn {
-  margin-left: 30px;
-  font-size: 15px;
-  margin-bottom: 40px;
-  background: transparent;
-  align-items: center;
-  font-family: "Epilogue", sans-serif;
+.menuHamburger {
+  border: red;
 }
-.btn--btnPrimary {
-  border-radius: 18px;
-  border: 1px solid black;
-  display: inline-block;
-  cursor: pointer;
-  padding: 13px 48px;
-  text-decoration: none;
-  align-self: center;
+.menuHamburger--bar1 {
+  background: red;
+  width: 30px;
+  height: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.menuHamburger--bar2 {
+  background: red;
+  width: 30px;
+  height: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.menuHamburger--bar3 {
+  background: red;
+  width: 30px;
+  height: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
 }
 
 .parent__div2--h1 {
