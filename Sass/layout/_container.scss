@@ -16,21 +16,26 @@
         @include p-20;
     }
 
-    &__div3 {
-        background-color: blue;
-        grid-area: 2 / 4 / 6 / 6;
-    }
-
     &__div2 {
-        background-color: green;
         grid-area: 2 / 1 / 5 / 4;
         @include d-flex;
         @include flex-column;
         padding: 60px;
     }
 
+    &__div3 {
+        background-image: url('../../images/image-hero-desktop.png');
+        background-size: cover;
+        height: 90%;
+        background-position: center;
+        grid-area: 2 / 4 / 6 / 6;
+
+    }
+
     &__div4 {
-        background-color: violet;
         grid-area: 5 / 1 / 6 / 4;
+        @include d-flex;
+        @include flex-row;
+        padding: 60px;
     }
 }

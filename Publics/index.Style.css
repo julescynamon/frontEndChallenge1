@@ -50,20 +50,24 @@ a {
   margin: 10px;
   padding: 20px;
 }
-.parent__div3 {
-  background-color: blue;
-  grid-area: 2/4/6/6;
-}
 .parent__div2 {
-  background-color: green;
   grid-area: 2/1/5/4;
   display: flex;
   flex-direction: column;
   padding: 60px;
 }
+.parent__div3 {
+  background-image: url("../../images/image-hero-desktop.png");
+  background-size: cover;
+  height: 90%;
+  background-position: center;
+  grid-area: 2/4/6/6;
+}
 .parent__div4 {
-  background-color: violet;
   grid-area: 5/1/6/4;
+  display: flex;
+  flex-direction: row;
+  padding: 60px;
 }
 
 .parent__div1--nav {
@@ -85,7 +89,7 @@ a {
   border-radius: 11px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.1);
   left: 104px;
   top: 90px;
   transform: translateY(-20px);
@@ -105,7 +109,7 @@ a {
   border-radius: 11px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.1);
   left: 290px;
   top: 90px;
   transform: translateY(-20px);
@@ -138,7 +142,36 @@ a {
 
 .parent__div2--h1 {
   font-family: "Epilogue", sans-serif;
+  font-size: 90px;
+  line-height: normal;
+  margin-bottom: 60px;
+}
+.parent__div2--p {
+  font-family: "Epilogue", sans-serif;
   width: 80%;
-  height: 70%;
-  font-size: 100px;
+  color: hsl(0deg, 0%, 41%);
+  font-size: 20px;
+  line-height: normal;
+  margin-bottom: 60px;
+  text-align: justify;
+}
+.parent__div2--btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 15px;
+  background: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 98%);
+  border: 1px solid hsl(0deg, 0%, 8%);
+  width: 170px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.parent__div2--btn:hover {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
+}
+
+.parent__div4--client {
+  margin-right: 60px;
 }/*# sourceMappingURL=index.Style.css.map */

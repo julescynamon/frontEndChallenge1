@@ -23,15 +23,17 @@
 </head>
 
 <body>
+
+	<!-- section header -->
 	<section class="parent">
 		<nav class="parent__div1">
 			<div class="parent__div1--nav">
 			<a href="#"><img src="./images/logo.svg" alt="" /></a>
 				<ul class="parent__div1--listAnim">
-					<li>
+					<li id="menu">
 						<a href="#">Features</a>
 						<img src="./images/icon-arrow-down.svg" alt="">
-						<ul class="cards">
+						<ul class="cards" id="menuToogle">
 							<li>
 								<img src="./images/icon-todo.svg" alt="">
 								<a href="#">Todo List</a>
@@ -50,10 +52,10 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li id="menu2">
 						<a href="#">Company</a>
 						<img src="./images/icon-arrow-down.svg" alt="">
-						<ul class="cards2">
+						<ul class="cards2" id="menuToogle2">
 							<li>
 								<a href="#">History</a>
 							</li>
@@ -73,26 +75,39 @@
 					</li>
 				</ul>
 				</div>
-				
 					<button class="btn">Login</button>
 					<button class="btn btn--btnPrimary">Register</button>
-				
-				
 			</nav>
+
+		<!-- Section content -->
 		<section class="parent__div2">
-			<h1 class="parent__div2--h1">Make remote work</h1>
+			<h1 class="parent__div2--h1">Make <br> remote work</h1>
 			<p class="parent__div2--p">Get your team in sync, no matter your location. Streamline processes,
 			create team rituals, and watch productivity soar.</p>
 			<button class="parent__div2--btn">Learn more</button>
 		</section>
-		<section class="parent__div4"> </section>
-		<footer class="parent__div3"> </footer>
+
+		<!-- section image -->
+		<section class="parent__div3"> </section>
+
+		<!-- section footer -->
+		<footer class="parent__div4">
+			<a href="#" class="parent__div4--client"><img src="./images/client-audiophile.svg" alt=""></a>
+			<a href="#" class="parent__div4--client"><img src="./images/client-databiz.svg" alt=""></a>
+			<a href="#" class="parent__div4--client"><img src="./images/client-maker.svg" alt=""></a>
+			<a href="#" class="parent__div4--client"><img src="./images/client-meet.svg" alt=""></a>
+		</footer>
 	</section>
+
+
 	<div class="attribution">
 		Challenge by
 		<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
 			href="#">Jules Cynamon</a>.
 	</div>
+
+
+	<script src="./script/index.js"></script>
 </body>
 
 </html>

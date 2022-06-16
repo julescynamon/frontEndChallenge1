@@ -1,8 +1,33 @@
 .parent__div2 {
     &--h1 {
         @include font;
+        font-size: 90px;
+        line-height: normal;
+        margin-bottom: 60px;
+    }
+    &--p {
+        @include font;
         width: 80%;
-        height: 70%;
-        font-size: 100px;
+        color: $colorGray;
+        font-size: 20px;
+        line-height: normal;
+        margin-bottom: 60px;
+        text-align: justify;
+    }
+    &--btn {
+        @include font;
+        font-size: 15px;
+        background: $colorBlack;
+        color: $colorWhite;
+        border: 1px solid $colorBlack;
+        width: 170px;
+        height: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background: $colorWhite;
+            color: $colorBlack;
+        }
     }
 }

@@ -96,5 +96,11 @@
     border-radius: 11px;
     @include p-20;
     background-color: #fff;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+// animations
+
+@mixin anim {
+    transition: all 0.3s ease-in-out;
 }
