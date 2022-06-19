@@ -205,8 +205,11 @@ a {
   margin-top: 5px;
 }
 
+#toogleResponsive {
+  display: none;
+}
+
 .menuMobile {
-  visibility: hidden;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -226,6 +229,7 @@ a {
   height: 30px;
   display: flex;
   align-self: flex-end;
+  cursor: pointer;
 }
 .menuMobile__div1--listAnim {
   padding: 30px;
@@ -264,6 +268,14 @@ a {
     max-width: 10vh;
   }
   .parent__div1--login {
+    display: none;
+  }
+
+  .cardsMobile {
+    display: none;
+  }
+
+  .cardsMobile2 {
     display: none;
   }
 
