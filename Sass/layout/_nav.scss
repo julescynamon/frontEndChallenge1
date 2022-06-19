@@ -15,27 +15,33 @@
             }
         }
 
-        &--login{
+        &--login {
             display: flex;
             justify-content: flex-end;
-            .btn {
-            margin-left: 30px;
-            font-size: 15px;
-            margin-bottom: 40px;
-            background: transparent;
-            @include align-items-center;
-            @include font;
 
-            &--btnPrimary {
-                border-radius: 18px;
-                border: 1px solid black;
-                display: inline-block;
-                cursor: pointer;
-                padding: 13px 48px;
-                text-decoration: none;
-                align-self: center;
+            .btn {
+                margin-left: 30px;
+                font-size: 15px;
+                margin-bottom: 40px;
+                background: transparent;
+                @include align-items-center;
+                @include font;
+
+                &--btnPrimary {
+                    border-radius: 18px;
+                    border: 1px solid black;
+                    display: inline-block;
+                    cursor: pointer;
+                    padding: 13px 48px;
+                    text-decoration: none;
+                    align-self: center;
+
+                    &:hover {
+                        transition: 0.3s ease-in-out;
+                        transform: scale(1.1);
+                    }
+                }
             }
-        }
         }
 
     }
@@ -75,39 +81,111 @@
     }
 }
 
+// menu du mobile 
+
 .menuHamburger {
-    border: red;
-    &--bar1{
-        background: red;
-        width: 30px;
-        height: 3px;
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-radius: 5px;
+    display: none;
+
+    &--bar1 {
+        @include burger;
+        @include mt-5;
     }
-    &--bar2{
-        background: red;
-        width: 30px;
-        height: 3px;
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-radius: 5px;
+
+    &--bar2 {
+        @include burger;
+        @include mt-5;
     }
-    &--bar3{
-        background: red;
+
+    &--bar3 {
+        @include burger;
+        @include mt-5;
+    }
+}
+
+.menuMobile {
+    visibility: hidden;
+    @include d-flex;
+    @include flex-column;
+    @include p-20;
+    @include font;
+    position: absolute;
+    border: 1px solid $colorBlack;
+    height: 160vh;
+    width: 40%;
+    background-color: $colorWhite;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    transition: 0.3s all;
+
+    &--close {
         width: 30px;
-        height: 3px;
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-radius: 5px;
+        height: 30px;
+        @include d-flex;
+        align-self: flex-end
+    }
+
+    &__div1--listAnim {
+        @include p-30;
+
+        &>li {
+            margin-bottom: 10px;
+            @include ml-10;
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        margin-left: 30px;
+        font-size: 15px;
+        margin-bottom: 20px;
+        background: transparent;
+        @include align-items-center;
+        @include font;
+
+        &--btnPrimary {
+            width: 60%;
+            border-radius: 18px;
+            border: 1px solid black;
+            display: inline-block;
+            cursor: pointer;
+            padding: 13px 48px;
+            text-decoration: none;
+            align-self: center;
+        }
     }
 }
 
 
 
+
 // media query
 
-@media (max-width: 990px) {}
+@media (max-width: 990px) {
+    .parent {
+        &__div1 {
+            &--nav {
+                @include d-flex;
+                justify-content: end;
+            }
+            &--listAnim {
+                display: none;
+                max-width: 10vh;
+            }
+
+            &--login {
+                display: none;
+            }
+
+        }
+
+    }
+
+    .menuHamburger {
+        display: flex;
+        @include flex-column;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+}
