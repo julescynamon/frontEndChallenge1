@@ -39,7 +39,7 @@
 				<ul class="parent__div1--listAnim">
 					<li id="menu">
 						<a href="#">Features</a>
-						<img src="./images/icon-arrow-down.svg" alt="">
+						<img id="myImg" src="./images/icon-arrow-down.svg" alt="">
 						<ul class="cards" id="menuToogle">
 							<li>
 								<img src="./images/icon-todo.svg" alt="">
@@ -61,7 +61,7 @@
 					</li>
 					<li id="menu2">
 						<a href="#">Company</a>
-						<img src="./images/icon-arrow-down.svg" alt="">
+						<img id="myImg2" src="./images/icon-arrow-down.svg" alt="">
 						<ul class="cards2" id="menuToogle2">
 							<li>
 								<a href="#">History</a>
@@ -98,7 +98,7 @@
 					<ul class="menuMobile__div1--listAnim">
 						<li id="menuResponsive">
 							<a href="#">Features</a>
-							<img id="myImg" src="./images/icon-arrow-down.svg" alt="">
+							<img   src="./images/icon-arrow-down.svg" alt="">
 							<ul class="cardsMobile" id="menuToogleResponsive">
 								<li>
 									<img src="./images/icon-todo.svg" alt="">
@@ -120,7 +120,7 @@
 						</li>
 						<li id="menuResponsive2">
 							<a href="#">Company</a>
-							<img id="myImg2" src="./images/icon-arrow-down.svg" alt="">
+							<img src="./images/icon-arrow-down.svg" alt="">
 							<ul class="cardsMobile2" id="menuToogleResponsive2">
 								<li>
 									<a href="#">History</a>
@@ -141,8 +141,11 @@
 						</li>
 					</ul>
 
-					<button class="menuMobile__btn">Login</button>
-					<button class="menuMobile__btn menuMobile__btn--btnPrimary">Register</button>
+					<div class="menuMobile__div1--containerButton">
+						<button class="menuMobile__btn">Login</button>
+						<button class="menuMobile__btn menuMobile__btn--btnPrimary">Register</button>
+					</div>
+
 				</div>
 
 			</div>
@@ -153,14 +156,17 @@
 
 		<!-- Section content -->
 		<section class="parent__div2">
-			<h1 class="parent__div2--h1">Make <br> remote work</h1>
+			<h1 class="parent__div2--h1">Make remote work</h1>
 			<p class="parent__div2--p">Get your team in sync, no matter your location. Streamline processes,
 				create team rituals, and watch productivity soar.</p>
 			<button class="parent__div2--btn">Learn more</button>
 		</section>
 
 		<!-- section image -->
-		<section class="parent__div3"> </section>
+		<section class="parent__div3">
+			<source media="(max-width: 990px)" srcset="./images/image-hero-mobile.png">
+			<img src="./images/image-hero-desktop.png" alt="">	
+		</section>
 
 		<!-- section footer -->
 		<footer class="parent__div4">

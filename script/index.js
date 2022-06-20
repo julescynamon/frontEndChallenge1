@@ -6,20 +6,32 @@ let nav2 = document.getElementById("menuToogle2");
 button.addEventListener("click", function (e) {
 	if (nav.style.display == "block") {
 		nav.style.display = "none";
-		document.getElementById("myImg").src = "../images/icon-arrow-down.svg";
 	} else {
 		nav.style.display = "block";
-		document.getElementById("myImg").src = "../images/icon-arrow-up.svg";
+	}
+
+	if (nav.style.display == "block") {
+		image1 = document.getElementById("myImg");
+		image1.classList.add("arrowChange");
+	} else {
+		image1 = document.getElementById("myImg");
+		image1.classList.remove("arrowChange");
 	}
 });
 
 button2.addEventListener("click", function (e) {
 	if (nav2.style.display == "block") {
 		nav2.style.display = "none";
-		document.getElementById("myImg2").src = "../images/icon-arrow-down.svg";
 	} else {
 		nav2.style.display = "block";
-		document.getElementById("myImg2").src = "../images/icon-arrow-up.svg";
+	}
+
+	if (nav2.style.display == "block") {
+		image2 = document.getElementById("myImg2");
+		image2.classList.add("arrowChange");
+	} else {
+		image2 = document.getElementById("myImg2");
+		image2.classList.remove("arrowChange");
 	}
 });
 
@@ -28,15 +40,18 @@ button2.addEventListener("click", function (e) {
 let openMenu = document.querySelector(".menuHamburger");
 let toggleMenu = document.getElementById("toogleResponsive");
 let closeMenu = document.querySelector(".menuMobile--close");
+let body = document.getElementsByTagName("body")[0];
 openMenu.addEventListener("click", function () {
 	if (toggleMenu.style.display == "block") {
 		toggleMenu.style.display = "none";
 	} else {
 		toggleMenu.style.display = "block";
+		body.classList.add("overflow");
 	}
 });
 closeMenu.addEventListener("click", function () {
 	toggleMenu.style.display = "none";
+	body.classList.remove("overflow");
 });
 
 let menu = document.getElementById("menuResponsive");

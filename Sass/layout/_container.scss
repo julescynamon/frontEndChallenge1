@@ -24,10 +24,6 @@
     }
 
     &__div3 {
-        background-image: url('../../images/image-hero-desktop.png');
-        background-size: cover;
-        height: 100%;
-        background-position: center;
         grid-area: 2 / 4 / 6 / 6;
 
     }
@@ -62,10 +58,6 @@
 
         &__div3 {
             grid-area: 2 / 1 / 5 / 3;
-            background-image: url('../../images/image-hero-mobile.png');
-            background-size: cover;
-            background-position: center;
-            height: 100%;
         }
 
         &__div4 {

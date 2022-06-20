@@ -48,6 +48,12 @@
     }
 }
 
+.arrowChange {
+    transition: 0.3s ease-in-out;
+    transform: rotate(180deg);
+}
+
+
 .cards {
     @include card;
     left: 104px;
@@ -160,13 +166,19 @@
     }
 }
 
-
+.overflow {
+    overflow: hidden;
+    background-color: $colorGray;
+    z-index: 99;
+}
 
 
 // media query
 
 @media (max-width: 990px) {
     .parent {
+        
+
         &__div1 {
             &--nav {
                 @include d-flex;
@@ -176,6 +188,7 @@
             &--listAnim {
                 display: none;
                 max-width: 10vh;
+                line-height: 2.5rem;
             }
 
             &--login {
@@ -186,12 +199,39 @@
 
     }
 
+    .menuMobile {
+        width: 63%;
+        transform: translateY(0%);
+
+        &__div1 {
+
+            &--containerButton {
+
+                display: flex;
+                flex-direction: column;
+
+            }
+
+
+        }
+
+        &__btn {
+            &--btnPrimary {
+                width: 95%;
+            }
+        }
+    }
+
     .cardsMobile {
         display: none;
+        margin-left: 10px;
+        line-height: 2rem;
     }
 
     .cardsMobile2 {
         display: none;
+        margin-left: 10px;
+        line-height: 2rem;
     }
 
     .menuHamburger {

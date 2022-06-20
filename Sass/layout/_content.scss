@@ -5,6 +5,7 @@
         line-height: normal;
         margin-bottom: 60px;
     }
+
     &--p {
         @include font;
         width: 80%;
@@ -14,6 +15,7 @@
         margin-bottom: 60px;
         text-align: justify;
     }
+
     &--btn {
         @include font;
         font-size: 15px;
@@ -25,9 +27,33 @@
         border-radius: 10px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+
         &:hover {
             background: $colorWhite;
             color: $colorBlack;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (max-width: 400px) {
+    .parent__div2 {
+        
+        padding: 0;
+        margin-left: 20px;
+        &--h1 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        &--p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        &--btn {
+            width: 95%;
         }
     }
 }

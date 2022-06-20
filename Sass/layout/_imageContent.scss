@@ -1,0 +1,38 @@
+.parent__div3 {
+    width: 500px;
+    height: 600px;
+
+    &>img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//  media queries
+
+@media screen and (max-width: 990px) {
+    .parent__div3 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .parent__div3 {
+        &>img {
+            width: 100%;
+            height: 80%;
+        }
+
+    }
+}
+
+@media screen and (min-width:402px) and (max-width: 600px) {
+    .parent__div3 {
+        &>img {
+            width: 100%;
+            height: 80%;
+        }
+
+    }
+}

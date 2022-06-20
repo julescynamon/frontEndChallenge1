@@ -3,3 +3,33 @@
         margin-right: 60px;
     }
 }
+
+// media queries
+
+@media screen and (max-width: 400px) {
+    .parent__div4 {
+        padding: 23px;
+
+        &--client {
+            margin-right: 20px;
+
+            &>img {
+                width: 67px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:402px) and (max-width: 610px) {
+    .parent__div4 {
+        padding: 23px;
+
+        &--client {
+            margin-right: 20px;
+
+            &>img {
+                width: 80px;
+            }
+        }
+    }
+}
